@@ -31,11 +31,13 @@ INSTALLED_APPS = [
     'drf_spectacular',           # Added for API documentation
     
     # Local apps
-    'core.apps.CoreConfig',      # Using app configs for better app registration
     'users.apps.UsersConfig',
-    'delivery.apps.DeliveryConfig',
     'common',
     'location_field.apps.DefaultConfig',
+    'core.payments.apps.PaymentsConfig',
+    'core.products.apps.ProductsConfig',
+    'core.reviews.apps.ReviewsConfig',
+    'core.delivery.apps.DeliveryConfig',
 ]
 
 MIDDLEWARE = [
