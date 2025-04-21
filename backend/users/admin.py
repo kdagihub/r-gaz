@@ -3,7 +3,7 @@ from django.contrib.auth.admin import UserAdmin
 from .models import User, VendorProfile
 
 class CustomUserAdmin(UserAdmin):
-    list_display = ('username', 'email', 'first_name', 'last_name', 'role', 'phone_number', 'is_verified_email', 'is_approved_vendor', 'is_staff', 'is_active')
+    list_display = ('id', 'username', 'email', 'first_name', 'last_name', 'role', 'phone_number', 'is_verified_email', 'is_approved_vendor', 'is_staff', 'is_active')
     list_filter = ('role', 'is_verified_email', 'is_approved_vendor', 'is_staff', 'is_active', 'date_joined')
     search_fields = ('username', 'email', 'first_name', 'last_name', 'phone_number', 'address')
     ordering = ('-date_joined',)
@@ -25,7 +25,7 @@ class CustomUserAdmin(UserAdmin):
     )
 
 class VendorProfileAdmin(admin.ModelAdmin):
-    list_display = ('business_name', 'user', 'status', 'average_rating')
+    list_display = ('id', 'business_name', 'user', 'status', 'average_rating')
     list_filter = ('status',)
     search_fields = ('business_name', 'user__username', 'user__email', 'address')
     ordering = ('business_name',)
