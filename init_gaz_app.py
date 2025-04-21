@@ -1,4 +1,5 @@
-# init_gaz_app.pyimport os
+# init_gaz_app.py
+import os
 
 # Dossiers à créer
 folders = [

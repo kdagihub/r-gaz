@@ -1,0 +1,34 @@
+# Django and REST framework
+Django==5.0.1
+djangorestframework==3.14.0
+djangorestframework-simplejwt==5.3.1
+django-environ==0.11.2
+django-extensions==3.2.3
+django-redis==5.4.0
+django-filter==23.5
+django-cors-headers==4.3.1
+django-crontab==0.7.1  # Pour les sauvegardes planifiées
+django-location-field==2.7.2  # Pour la gestion des coordonnées géographiques
+six==1.16.0  # Required by django-location-field
+
+# Documentation API
+drf-spectacular==0.27.0
+drf-spectacular-sidecar==2024.1.1
+
+# Database
+psycopg2-binary==2.9.9
+
+# Environment variables
+python-dotenv==1.0.0
+
+# Testing
+pytest==7.4.3
+pytest-django==4.7.0
+
+# Code quality
+black==23.11.0
+isort==5.12.0
+flake8==6.1.0
+
+# Production
+gunicorn==21.2.0
